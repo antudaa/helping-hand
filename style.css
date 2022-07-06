@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+
+/* Banner Home Page First Section */
+
+.background-img {
+    background-image: url(images/donation13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.overlay-text {
+
+    width: 100%;
+    height: 100%;
+    color: beige;
+    white-space: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.banner-text {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.overlay-text h1 {
+
+    font-size: 50px;
+
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: none;
+}
+
+.btn:hover {
+    color: #0d233a;
+    background-color: orange;
+    border: 1px solid aqua;
+    cursor: pointer;
+}
+
+/* Secound Section */
+
+.secound-section {
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading-text {
+    text-align: center;
+    padding-top: 100px;
+    color: #0d233a;
+}
+
+.heading-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.heading-text p {
+    margin-top: 22px;
+    font-size: 16px;
+}
+
+.donation-amount {
+    margin-top: 22px;
+    margin-left: 340px;
+    margin-right: 340px;
+    display: flex;
+    text-align: center;
+    padding-inline: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.donat-card {
+    width: 100px;
+    height: 100px;
+    border: 0 solid black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.donat-card-selected {
+    width: 100px;
+    height: 100px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: bisque;
+
+}
+
+.donat-card-selected h2 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.donat-card h2 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    flex-direction: column;
+}
+
+.input-field input {
+    width: 60%;
+    text-align: center;
+    height: 40px;
+    margin-top: 80px;
+    padding: 0 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #0d233a;
+    background-color: aliceblue;
+    outline: none;
+}
+
+
+.input-field button {
+    margin-top: 30px;
+}
+
+.section-three {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+/* Third Section Start */
+
+.third-section-heading {
+    text-align: center;
+}
+
+.third-section-heading h1 {
+    font-size: 50px;
+    color: #0d233a;
+}
+
+.third-section-heading p {
+    margin-top: 15px;
+}
+
+.cards {
+    margin-top: 50px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.cards h2 {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.cards p {
+    margin: 10px 10px 20px 20px;
+    text-align: left;
+}
+
+.cards img {
+    height: 60px;
+    width: 60px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.cards a {
+    color: orangered;
+    text-decoration: none;
+
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.card1 {
+    background-color: azure;
+}
+
+.card2 {
+    background-color: blanchedalmond;
+}
+
+.card3 {
+    background-color: aquamarine;
+}
+
+/* Forth Section Events Section  */
+
+.section-four {
+    background-color: aliceblue;
+    width: 100vw;
+    height: 150vh;
+}
+
+.section-four-heading {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.section-four-heading h1 {
+    font-size: 50px;
+}
+
+.section-four-heading p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.img1 {
+    text-align: center;
+    width: 200px;
+    height: 280px;
+    border: 1px solid #0d233a;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.img1 h2 {
+    color: orangered;
+}
+
+.img1 p {
+    padding-left: 10px;
+}
+
+.img1 a {
+    text-decoration: none;
+    color: orangered;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.img1 img {
+    border-radius: 8px;
+    width: 200px;
+    height: 150px;
+}
+
+.first-flex {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+}
+
+.secound-flex {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+}
+
+
+/* Last Section  */
+
+.last-section {
+    background-color: aliceblue;
+    width: 100vw;
+    height: 70vh;
+}
+
+.last-sec-heading {
+    text-align: center;
+
+}
+
+.last-sec-heading h1 {
+    font-size: 50px;
+    color: #0d233a;
+}
+
+.last-sec-heading p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #0d233a;
+}
+
+.contact-subscribe-sec {
+    background-color: bisque;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 100px 350px 60px 350px;
+    padding-top: 70px;
+}
+
+.button {
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: orangered;
+    color: #0d233a;
+    border: 1px solid #0d233a;
+    margin-left: -4px;
+    padding: 10px 30px;
+}
+
+.button:hover {
+    color: #0d233a;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.contact-subscribe-sec input {
+    text-align: center;
+    border: 1px solid #0d233a;
+    background-color: aliceblue;
+    padding: 11px 80px;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    font-family: 'Source Serif Pro', serif;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+footer h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: red;
+}
+
+footer p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: aliceblue;
+}
