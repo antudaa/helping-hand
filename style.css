@@ -1,10 +1,16 @@
+/* Fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&family=Cormorant+SC:wght@300;500&family=Ibarra+Real+Nova&family=Playfair+Display&family=Source+Serif+Pro:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Playfair Display', serif;
 }
 
-/* Banner Home Page First Section */
+/*---------------------------- 
+Banner Home Page First Section
+------------------------------ */
 
 .background-img {
     background-image: url(images/donation13.jpg);
@@ -12,11 +18,9 @@
     background-size: cover;
     width: 100vw;
     height: 100vh;
-
 }
 
 .overlay-text {
-
     width: 100%;
     height: 100%;
     color: beige;
@@ -26,7 +30,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-
 }
 
 .banner-text {
@@ -35,14 +38,12 @@
 }
 
 .overlay-text h1 {
-
     font-size: 50px;
-
 }
 
 .btn {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 15px;
     background-color: orangered;
     color: aliceblue;
@@ -54,16 +55,32 @@
 .btn:hover {
     color: #0d233a;
     background-color: orange;
-    border: 1px solid aqua;
     cursor: pointer;
 }
 
-/* Secound Section */
+/*---------------------------- 
+Responsive For Max Width 480px
+------------------------------  */
+
+@media only screen and (max-width: 480px) {
+    .overlay-text h1 {
+        width: 80%;
+        font-size: 40px;
+    }
+    .background-img {
+        width: 100%;
+        height: 80vh;
+    }
+}
+
+/*--------------
+ Secound Section
+ --------------- */
 
 .secound-section {
     background-color: aliceblue;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 }
 
 .heading-text {
@@ -147,13 +164,57 @@
     margin-top: 30px;
 }
 
+/*---------------------------- 
+Responsive For Max Width 480px
+------------------------------  */
+
+@media only screen and (max-width: 480px) {
+    .heading-text {
+        padding-top: 50px;
+    }
+    .donation-amount {
+        margin-top: 22px;
+        margin-left: 40px;
+        margin-right: 40px;
+        display: flex;
+        text-align: center;
+        padding-inline: 10px;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .donat-card {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .donat-card-selected {
+        width: 50px;
+        height: 50px;
+    }
+    .donat-card h2 {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+    .donat-card-selected h2 {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+    .secound-section {
+        width: 100%;
+        height: 80vh;
+    }
+}
+
+/*----------------- 
+Third Section Start
+------------------- */
+
 .section-three {
     width: 100vw;
     height: 100vh;
     background-color: aliceblue;
 }
-
-/* Third Section Start */
 
 .third-section-heading {
     text-align: center;
@@ -221,7 +282,50 @@
     background-color: aquamarine;
 }
 
-/* Forth Section Events Section  */
+/*---------------------------- 
+Responsive For Max Width 480px
+------------------------------  */
+
+@media only screen and (max-width: 480px) {
+    .section-three {
+        width: 100%;
+        height: 180vh;
+    }
+    .third-section-heading h1 {
+        font-size: 40px;
+        padding-left: 20px;
+    }
+    .third-section-heading p {
+        width: 90%;
+        padding-left: 20px;
+    }
+    .flex-box {
+        flex-direction: column;
+    }
+    .cards {
+        margin-top: 50px;
+        width: 250px;
+        height: 350px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px gray;
+    }
+    .cards img {
+        height: 45px;
+        width: 45px;
+        margin-top: 20px;
+    }
+    .flex-box {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
+/*   -------------------------- 
+Forth Section Events Section
+----------------------------   */
 
 .section-four {
     background-color: aliceblue;
@@ -274,30 +378,40 @@
     height: 150px;
 }
 
-.first-flex {
-    padding-top: 60px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 100px;
-    margin-right: 100px;
-
-
+.sec-four-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    padding: 100px 100px 100px 190px;
 }
 
-.secound-flex {
-    padding-top: 60px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 100px;
-    margin-right: 100px;
+/*---------------------------- 
+Responsive For Max Width 480px
+------------------------------  */
 
-
+@media only screen and (max-width: 480px) {
+    .section-four {
+        background-color: aliceblue;
+        width: 100%;
+        height: 280vh;
+    }
+    .section-four-heading {
+        text-align: center;
+        width: 80%;
+        margin-left: 40px;
+    }
+    .sec-four-grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 90px;
+    }
 }
 
 
-/* Last Section  */
+/*-----------
+ Last Section
+ ------------  */
 
 .last-section {
     background-color: aliceblue;
@@ -332,9 +446,14 @@
     padding-top: 70px;
 }
 
+.contact-subscribe-flex {
+    display: flex;
+    padding-left: 110px;
+    align-items: center;
+}
+
 .button {
-    font-size: 15px;
-    border-radius: 5px;
+    font-size: 14px;
     background-color: orangered;
     color: #0d233a;
     border: 1px solid #0d233a;
@@ -353,11 +472,67 @@
     border: 1px solid #0d233a;
     background-color: aliceblue;
     padding: 11px 80px;
-    border-radius: 5px;
+}
+
+/*---------------------------- 
+Responsive For Max Width 480px
+------------------------------  */
+
+@media only screen and (max-width: 480px) {
+    .last-section {
+        background-color: aliceblue;
+        width: 100%;
+        height: 70vh;
+    }
+    .contact-subscribe-sec {
+        background-color: bisque;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        height: 60px;
+        border-radius: 5px;
+        margin: 20px 40px;
+        padding-top: 70px;
+    }
+    .last-sec-heading  {
+        padding-left: 60px;
+    }
+    .last-sec-heading h1 {
+        font-size: 40px;
+        width: 80%;
+    }
+    .last-sec-heading p {
+        font-size: 16px;
+        margin-top: 20px;
+        width: 80%;
+        padding-bottom: 100px;
+    }
+    .contact-subscribe-flex {
+        display: flex;
+        padding-left: 25px;
+        align-items: center;
+    }
+    
+    .button {
+        font-size: 14px;
+        background-color: orangered;
+        color: #0d233a;
+        border: 1px solid #0d233a;
+        margin-left: -4px;
+        padding: 6px 10px;
+    }
+    .contact-subscribe-sec input {
+        text-align: center;
+        border: 1px solid #0d233a;
+        background-color: aliceblue;
+        padding: 7px 15px;
+    }
 }
 
 
-/* Footer */
+/*---- 
+Footer
+------ */
 
 footer {
     font-family: 'Source Serif Pro', serif;
@@ -373,8 +548,7 @@ footer h1 {
     color: red;
 }
 
-footer p {
+footer small {
     padding-top: 10px;
-    padding-bottom: 20px;
     color: aliceblue;
 }
